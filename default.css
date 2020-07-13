@@ -6,7 +6,7 @@
 /* Cor do indicador de rolagem */
 ::-webkit-scrollbar-thumb:vertical,
 ::-webkit-scrollbar-thumb:horizontal {
-  background-color: #3490cc;
+  background-color: #717171;
 }
 
 /* Cor do indicador de rolagem - ao passar o mouse */
@@ -25,5 +25,7 @@
   background-color: #287ae6 !important;
   color: white !important;
   cursor: pointer !important;
-  
+}
+.btn:focus {
+  box-shadow: none !important;
 }
