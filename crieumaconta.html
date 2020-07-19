@@ -21,8 +21,8 @@
         <img src="imagens/speedapps.png" class="header-img" alt="">
     </header>
     <section class="section1">
-        <div id="first-step" class="div-inicio ">
-            <h1>Ativar sua conta 1.0</h1>
+        <div id="first-step" class="div-inicio active">
+            <h1>Ativar sua conta</h1>
             <p>
                 <div class="div-text">
                     Após o cadastro você terá acesso ao painel de controle onde pode
@@ -34,7 +34,7 @@
                     de
                     7 dias não é necessário baixar nenhuma aplicativo.</div>
             </p>
-            <div>Passo 1/5</div>
+            <div class="passos">Passo 1/5</div>
             <form action="">
                 <div class="input-container">
                     <input id="empresa" class="input" type="text" pattern=".+" required />
@@ -63,7 +63,7 @@
             <button id="to-second-step" class="btn btn-prox">PRÓXIMA</button>
         </div>
         <div id="second-step" class="div-inicio ">
-            <h1>Informações de contato 2.0</h1>
+            <h1>Informações de contato</h1>
             <p>
                 <div class="div-text">Aqui precisamos de seus dados para contato, você será o administrador do
                     ZapPedis. <span class="tooltopi" data-toggle="tooltip" data-placement="top"
@@ -71,6 +71,7 @@
                         ?
                     </span></div>
             </p>
+            <div class="passos">Passo 2/5</div>
             <form action="">
                 <div class="input-container">
                     <input id="email" class="input" type="" pattern=".+" required />
@@ -99,40 +100,47 @@
                         </span></label>
                 </div>
             </form>
-            <button id="to-third-step" class="btn btn-prox">PRÓXIMA</button>
+            <div class="botoes-form">
+                <button id="back-step-two" class="btn btn-voltar">VOLTAR</button>
+                <button id="to-third-step" class="btn">PRÓXIMA</button>
+            </div>
         </div>
         <div id="third-step" class="div-inicio ">
-            <h1>Precisamos de algumas informações sobre seu negócio para oferecer um serviço que supra sua necessidade. 3.0
+            <h1>Precisamos de algumas informações sobre seu negócio para oferecer um serviço que supra sua necessidade.
                 <span class="tooltopi" data-toggle="tooltip" data-placement="top"
                     title="Para que possamos oferecer mais recursos a seu negócio, precisamos de algumas informações">
                     ?
                 </span>
             </h1>
+            <div class="passos">Passo 3/5</div>
             <p>
                 <div class="div-text">Quantidade de pedidos feitos por dia</div>
             </p>
             <form action="" name="form" class="form-pedido">
                 <span>
-                    <input type="radio" id="vehicle1" name="vehicle1" class="input-radio">
+                    <input type="radio" id="vehicle1" name="vehicle1" class="input-radio" value="15">
                     <label for="vehicle1" class="label-radio">até 15</label>
                 </span>
                 <span>
-                    <input type="radio" id="vehicle2" name="vehicle1" class="input-radio">
+                    <input type="radio" id="vehicle2" name="vehicle1" class="input-radio" value="16-30">
                     <label for="vehicle2">entre 16 e 30</label>
                 </span>
                 <span>
-                    <input type="radio" id="vehicle3" name="vehicle1" class="input-radio">
+                    <input type="radio" id="vehicle3" name="vehicle1" class="input-radio" value="31-100">
                     <label for="vehicle3">entre 31 e 100</label>
                 </span>
                 <span>
-                    <input type="radio" id="vehicle4" name="vehicle1" class="input-radio">
+                    <input type="radio" id="vehicle4" name="vehicle1" class="input-radio" value="101">
                     <label for="vehicle4">acima de 101</label>
                 </span>
             </form>
-            <button id="to-bedroom-step" class="btn btn-prox">PRÓXIMA</button>
+            <div class="botoes-form">
+                <button id="back-step-three" class="btn btn-voltar">VOLTAR</button>
+                <button id="to-bedroom-step" class="btn">PRÓXIMA</button>
+            </div>
         </div>
-        <div id="bedroom-step" class="div-inicio">
-            <h1>Tudo pronto, vamos ao login. 4.0</h1>
+        <div id="bedroom-step" class="div-inicio ">
+            <h1>Tudo pronto, vamos ao login.</h1>
             <p>
                 <div class="div-text">Agora crie um login para iniciar seu ZapPedis.<span class="tooltopi"
                         data-toggle="tooltip" data-placement="top"
@@ -140,6 +148,7 @@
                         ?
                     </span></div>
             </p>
+            <div class="passos">Passo 4/5</div>
             <form action="" id="loginForm">
                 <div class="input-container">
                     <input id="user" class="input" type="text" pattern=".+" required />
@@ -158,16 +167,20 @@
                     gratuito
                 </div>
             </p>
-            <button id="to-fifth-step" class="btn btn-prox">CONCORDO E CONTINUAR</button>
+            <div class="botoes-form">
+                <button id="back-step-four" class="btn btn-voltar">VOLTAR</button>
+                <button id="to-fifth-step" class="btn">CONCORDO E CONTINUAR</button>
+            </div>
         </div>
-        <div id="fifth-step" class="div-inicio active">
-            <h1>Compare os planos de preços do ZapPedis e faça seu teste gratuito de 7 dias. 5.0</h1>
+        <div id="fifth-step" class="div-inicio ">
+            <h1>Compare os planos de preços do ZapPedis e faça seu teste gratuito de 7 dias.</h1>
             <p>
                 <div class="div-text">Dados de faturamento podem ser exigidos, porém nenhum valor será cobrado sem
                     prévio aviso, seu teste gratuito não implica em nenhum pagamento posterior e pode ser cancelado a
                     qualquer momento.
                 </div>
             </p>
+            <div class="passos">Passo 5/5</div>
             <div class="colum">
                 <div class="preco" id="gratis">
                     <p>
@@ -188,8 +201,11 @@
                     </p>
                 </div>
             </div>
-            <button id="end-register" class="btn btn-prox">CONCORDO E CONTINUAR</button>
-            <button class="btn btn-voltar">VOLTAR</button>
+            <div class="botoes-form">
+                <button id="back-step-five" class="btn btn-voltar">VOLTAR</button>
+                <button id="end-register" class="btn">CONCORDO E CONTINUAR</button>
+            </div>
+
         </div>
     </section>
 

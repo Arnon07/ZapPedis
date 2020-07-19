@@ -25,6 +25,7 @@
   background-color: #287ae6 !important;
   color: white !important;
   cursor: pointer !important;
+  font-weight: bold !important;
 }
 .btn:focus {
   box-shadow: none !important;
