@@ -82,7 +82,10 @@
     position: relative;
     animation: 20s slider infinite;
   }
-
+  .carousel-control-prev {
+    left: 0;
+    margin-left: -3vw;
+  }
   #carouselExampleIndicators.carousel.slide {
     padding-top: 7.5vw;
   }
@@ -242,6 +245,7 @@
     text-decoration: none;
     color: #50fa7b;
   }
+
 }
 /** Mobile **/
 @media (max-width: 992px) {
@@ -330,7 +334,10 @@
     position: relative;
     animation: 20s slider infinite;
   }
-
+  .carousel-control-prev {
+    left: 0;
+    margin-left: -2vw;
+  }
   #carouselExampleIndicators.carousel.slide {
     padding-top: 7.5vw;
     display: flex;
@@ -481,7 +488,7 @@
     font-family: "Roboto", sans-serif;
   }
   .footer p {
-    font-size: 5.4vw;
+    font-size: 4vw;
     color: white;
     text-align: center;
     font-weight: 500;
